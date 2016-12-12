@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>餐库</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">  
+    @import url('/css/common/sprite-common.css')
+</style>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<!-- 让ie6-8支持css3伪类和属性选择器和h5标签 -->
+<!--[if  IE]> 
+<script type="text/javascript" src="/js/selectivizr.js"></script>
+<script type="text/javascript" src="/js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+    <!-- 头部导航栏 -->
+    <nav class="nav">
+        <div class="wap">
+        <div title="餐库" class="logo"><a href="/"><span>餐库</span></a></div>
+        <ul>
+            <li><a href="/today">今日订单</a></li>
+            <% if (locals.session.user) { %>
+            <li class="nav_item_my">
+                <a href='#'><%=locals.session.user.name%></a>
+                <ul id="nav_my">
+                    <li><a href="/user/order">我的订单</a></li>
+                    <li><a href="/user/balance">账户余额</a></li>
+                    <li><a href="/user/account">帐号设置</a></li>
+                    <li><a href="/user/logout">退出</a></li>
+                </ul>
+            </li>
+            <% if (locals.session.user.canOperateShop || locals.session.user.isAdmin) {%>
+            <li><a href="/admin/">后台</a></li>
+            <% } %>
+            <% } %>
+        </ul>
+        </div>
+    </nav>
+    <!-- logo,导航和搜索框 -->
+    <div class="header_text">
+        <div class="logo_area left">
+            <img src="/img/index-logo.png" alt="百度糯米"/>
+        </div>
+        <div id="search_bar">
+            <input type="button" class="search_submit right" value="搜索" />
+            <input type="text" class="search_text right" placeholder="搜索商家或地点" />
+            <ul>
+                <li>聚优惠...</li>
+                <li>月饼</li>
+                <li>KTV</li>
+            </ul>
+        </div>
+        <ul id="nav">
+            <li class="all_obj">全部分类
+            </li><li>首页</li>
+            <li class="hot_logo">精选品牌</li>
+            <li class="hot_logo">电影</li>
+            <li>酒店</li>
+            <li class="go_out">
+                出行
+                <span>▼</span>
+                <ul class="out_ways hide">
+                    <li>机票</li>
+                    <li>火车票</li>
+                    <li>汽车票</li>
+                </ul>
+            </li>
+            <li>一元夺宝</li>
+            <li>今日新单</li>
+        </ul>
+    </div>
+</header>

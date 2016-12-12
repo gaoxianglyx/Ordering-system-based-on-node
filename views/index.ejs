@@ -1,0 +1,123 @@
+<% include header %>
+<div class="wap">
+  <aside class="left">
+    <div>
+      <dl>
+        <dt class="left">美食</dt>
+        <dd>精选品牌</dd>
+        <dd>小吃快餐</dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt class="left">电影</dt>
+        <dd>在线订座</dd>
+        <dd>电影票团购</dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt class="left">休闲娱乐</dt>
+        <dd>KTV</dd>
+        <dd>足疗按摩</dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt class="left">一元抢宝</dt>
+        <dd>苹果手机</dd>
+        <dd>小米</dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt class="left">生活服务</dt>
+        <dd>丽人</dd>
+        <dd>配镜</dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt class="left">酒店</dt>
+        <dd>重庆</dd>
+        <dd>成都</dd>
+        <dd>中江</dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt class="left">本地生活</dt>
+        <dd>温泉洗浴</dd>
+        <dd>采摘</dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt class="left">丽人</dt>
+        <dd>美发</dd>
+        <dd>美甲</dd>
+        <dd>美容SPA</dd>
+      </dl>
+    </div>
+  </aside>
+  <div id="banner">
+    <i class="ico before hide"><</i>
+    <i class="ico after hide">></i>
+    <ul class="tab_pic">
+      <li><img src="/img/banner1.jpg" /></li>
+      <li><img src="/img/banner2.jpg" /></li>
+    </ul>
+  </div>
+  <img  class="slide_pic" src="/img/slide_pic.jpg" />
+  <div class="detial_obj left">
+    <h4>热门团购</h4>
+    <ul>
+      <li>电影</li>
+      <li>自助餐</li>
+      <li>KTV</li>
+      <li>火锅</li>
+      <li>蛋糕</li>
+      <li>酒店</li>
+      <li>小吃快餐</li>
+      <li>西餐</li>
+    </ul>
+  </div>
+  <div class="detial_obj left">
+    <h4>全部区域</h4>
+    <ul>
+      <li>地铁区域</li>
+      <li>渝北区</li>
+      <li>江北区</li>
+      <li>沙坪坝区</li>
+      <li>南岸区</li>
+      <li>渝中区</li>
+    </ul>
+  </div>
+  <div class="detial_obj left">
+    <h4>热门商圈</h4>
+    <ul>
+      <li>南岸区</li>
+      <li>观音桥</li>
+      <li>南坪</li>
+      <li>三峡广场</li>
+      <li>龙湖时代天街</li>
+      <li>万达</li>
+    </ul>
+  </div>
+  <img class="side_pic2 right" src="/img/side_pic2.jpg">
+  <div class="left">
+  <% shops.forEach(function(shop){ %>
+  <div class="food-item">
+    <h3><a href="/shop/<%=shop._id%>"><%=shop.name%></a></h3>
+    <p><em>地址：</em><%=shop.address%><br/><em>电话：</em><%=shop.tel%></p>
+    <a href="/shop/<%=shop._id%>"><img src="/images/shop/1.png"/></a>
+  </div>
+  <% }) %>
+  </div>
+  </div>
+</div>
+<!-- <div class="wap">
+ 
+</div>
+<% include footer %> -->
+<script type="text/javascript" src="/js/index.js"></script>

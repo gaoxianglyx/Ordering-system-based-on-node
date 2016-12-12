@@ -1,0 +1,72 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-del {
+  background-image: url(sprite-common.png);
+  background-position: -634px -310px;
+  width: 18px;
+  height: 40px;
+}
+.icon-fav_bg {
+  background-image: url(sprite-common.png);
+  background-position: -240px -310px;
+  width: 300px;
+  height: 100px;
+}
+.icon-food-item {
+  background-image: url(sprite-common.png);
+  background-position: -240px -534px;
+  width: 25px;
+  height: 191px;
+}
+.icon-food_bg {
+  background-image: url(sprite-common.png);
+  background-position: -439px -420px;
+  width: 320px;
+  height: 30px;
+}
+.icon-index-logo {
+  background-image: url(sprite-common.png);
+  background-position: -439px -460px;
+  width: 261px;
+  height: 36px;
+}
+.icon-logo {
+  background-image: url(sprite-common.png);
+  background-position: -240px -420px;
+  width: 189px;
+  height: 104px;
+}
+.icon-logo2 {
+  background-image: url(sprite-common.png);
+  background-position: -550px -310px;
+  width: 74px;
+  height: 45px;
+}
+.icon-modal-gloss {
+  background-image: url(sprite-common.png);
+  background-position: 0px 0px;
+  width: 800px;
+  height: 300px;
+}
+.icon-下载 {
+  background-image: url(sprite-common.png);
+  background-position: 0px -310px;
+  width: 230px;
+  height: 658px;
+}
