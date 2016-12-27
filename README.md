@@ -1,5 +1,6 @@
 餐库
 =======
+**原作者README信息**
 
 canku 是一个使用 nodejs 编写的多人订餐程序，使用了 [express](http://expressjs.com/) , [mongoskin](https://github.com/kissjs/node-mongoskin) 模块。使用 [mongodb](http://www.mongodb.org/) 做存储。
 
